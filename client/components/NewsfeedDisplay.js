@@ -54,8 +54,8 @@ function NewsfeedDisplay(props) {
     description={article.description}
     image={article.urlToImage}
     date={article.publishedAt}
-     //url = {article.url};
-     //content = {article.content};
+    url = {article.url}
+    content = {article.content}
     />
   );
 

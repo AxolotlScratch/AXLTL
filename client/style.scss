@@ -1,4 +1,4 @@
-@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap"; // TODO: check out @import scss rule and why this works but not when this is imported into index.js  https://getbootstrap.com/docs/4.0/getting-started/theming/
 
 body {
     background-color: lightblue;
