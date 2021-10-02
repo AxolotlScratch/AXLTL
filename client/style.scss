@@ -5,3 +5,26 @@ body {
 #root {
   font-size: large;
 }
+
+#articles{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+
+#artclBox{
+  padding: 5px 5px 5px 5px;
+  width: 350px; 
+  height: 500px;
+  border: 1px solid #e6e6e6;
+  overflow-wrap: break-word; 
+  overflow: hidden;
+}
+
+#artclBox > img {
+  width: 85%;
+  height: 30%;
+  object-fit: cover;
+  object-position: 0 0; // position image center and top down in the given width height
+}
