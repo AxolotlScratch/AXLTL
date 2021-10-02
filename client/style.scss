@@ -6,6 +6,48 @@ body {
   font-size: large;
 }
 
+// Top navigation bar
+
+#newsNav {
+  display: inline-flex;
+  width: 53.5%;
+  justify-content: flex-end;
+}
+#newsNav > span{
+  padding-right: 2%;
+  font-size: 1.5vw;
+}
+
+#accountNav {
+  display: inline-flex;
+  width: 46.5%;
+  justify-content: flex-end;
+}
+
+#accountNav > span{
+  padding-right: 2%;
+  font-size: 1vw;
+}
+
+#announcementBar{
+  margin-bottom: 10px;
+}
+
+// Category navigation bar
+
+#catNav{
+  display: flex;
+  justify-content: center;
+  font-size: 1vw;
+  margin-bottom: 10px;
+}
+
+#catNav > span{
+  padding-right: 2%
+}
+
+// Articles div
+
 #articles{
   display: flex;
   justify-content: space-evenly;

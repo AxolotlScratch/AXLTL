@@ -20,6 +20,7 @@ function App (props){
                   <span>Settings</span>
                   <span>Login</span>
               </div>
+
           </div>
           <div id='newsDisplay'>
             <NewsfeedDisplay/>
