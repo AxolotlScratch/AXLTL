@@ -45,7 +45,8 @@ function NewsfeedDisplay(props) {
 
   console.log(state);
 
-  const articles = state.articles.map(article => <ArticleBox 
+  const articles = state.articles.map((article, i) => <ArticleBox 
+    key={`article${i}`}
     source={article.source.name}
     author={article.author}
     title={article.title}
