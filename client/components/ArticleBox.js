@@ -27,7 +27,7 @@ function ArticleBox (props) {
             {new Date(props.date).toLocaleDateString()}
           </Modal.Title>
           <Modal.Body>
-            {props.image && <img src={props.image}/>} 
+            {props.image && <img id="modalImage" src={props.image}/>} 
             {props.content}
             <a href={props.url} target="_top">Click here to see more</a>
           </Modal.Body>
