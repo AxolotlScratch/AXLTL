@@ -12,7 +12,7 @@ function ArticleBox (props) {
       <div id='artclBox' onClick={() => {console.log('dsad'); setShow(true)} }>
         {/* if no url for image, do not render on screen */}
         {props.image && <img src={props.image}/>} 
-        <input type='button' id='favButton' value='Fav'/>
+        {/* <input type='button' id='favButton' value='Fav'/> */}
         {/* https://codepen.io/Guades/pen/bewZgO */}
         <h3>{props.title}</h3>
         <h4>{props.author}</h4>
