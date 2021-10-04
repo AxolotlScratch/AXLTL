@@ -1,7 +1,85 @@
+@import "~bootstrap/scss/bootstrap"; // TODO: check out @import scss rule and why this works but not when this is imported into index.js  https://getbootstrap.com/docs/4.0/getting-started/theming/
+
 body {
-    background-color: lightblue;
+  background-color: #e7e7e7;
 }
 
 #root {
   font-size: large;
+}
+
+// Top navigation bar
+
+#newsNav {
+  display: inline-flex;
+  width: 60%;
+  justify-content: flex-end;
+  background-color: #5eb9aa;
+  padding-right: 2%;
+  font-size: calc(12px + 1.3vw);;
+}
+
+#newsNav > span {
+  margin-right: 3%;
+}
+
+#accountNav {
+  display: inline-flex;
+  width: 40%;
+  justify-content: flex-end;
+  background-color: #5eb9aa;
+}
+
+#accountNav > span{
+  padding-right: 2%;
+  font-size: calc(12px + 1vw);
+}
+
+#announcementBar{
+  padding-bottom: 10px;
+  background-color: #5eb9aa;
+}
+
+// Category navigation bar
+
+#catNav{
+  display: flex;
+  justify-content: center;
+  font-size: calc(12px + 1vw);
+  margin-bottom: 10px;
+  background-color: #5eb9aa;
+  padding-bottom: 10px;
+}
+
+#catNav > span{
+  padding-right: 2%
+}
+
+// Articles div
+
+#articles{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+
+#artclBox{
+  padding: 15px 5px 15px 5px;
+  width: 350px; 
+  height: 500px;
+  border: 1px solid #e6e6e6;
+  overflow-wrap: break-word; 
+  overflow: hidden;
+  text-align: center;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #b9b9b9;
+}
+
+#artclBox > img {
+  width: 85%;
+  height: 30%;
+  object-fit: cover;
+  object-position: 0 0; // position image center and top down in the given width height
 }
