@@ -10,14 +10,12 @@ const upController = require('../controllers/upController.js');
 // })
 
 //ROUTES//
-// GET /:id : add username to user table
-// router.post('/user',
-//   upController.addUser,
-//   (req, res) => res.status(200).json('Username was successfully added to users table.')
-// );
 
 //GET /favorites/user#: get a list of favorites with user#
-
+router.get('/favorites',
+  upController.getFavorites,
+  (req, res) => res.status(200).json('List of all articles liked by user was successfully queried.')
+);
 //POST /favorites: create a new favorite 
 router.post('/favorite',
   upController.addUser,
@@ -25,8 +23,6 @@ router.post('/favorite',
   upController.addFavorite,
   (req, res) => res.status(200).json('Article post was successfully added to favorites.')
 );
-
-// DELETE /favorites/post#
 
 // YOU CAN CLEAN UP BELOW CODE USING ROUTER
 // get all posts a user has liked
@@ -36,7 +32,13 @@ router.post('/favorite',
 //     res.end();
 // });
 
-// // when user presses a liked post, delete the user and article url combo from junction table
+//DELETE /favorites/post#
+//when user presses a liked post, delete the user and article url combo from junction table
+router.delete('/favorite',
+  upController.deleteFavorite,
+  (req, res) => res.status(200).json('Article post was successfully deleted from favorites.')
+);
+
 // router.delete('/:id', (req, res, next) => {
 //     // ${req.params.id}
 //     console.log("Favorites Router Working");

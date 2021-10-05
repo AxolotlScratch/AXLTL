@@ -2,13 +2,12 @@ import React from 'react';
 import Login from './Login';
 import CreateAccount from './CreateAccount';
 import NewsfeedDisplay from './NewsfeedDisplay';
-import GoogleLogin from 'react-google-login';
+//import GoogleLogin from 'react-google-login';
 
 function App(props) {
-
   return (
     <div>
-      <Login/>
+      <Login />
 
       <div id='announcementBar'>
         <div id='newsNav'>
@@ -17,7 +16,9 @@ function App(props) {
         </div>
         <div id='accountNav'>
           <span>Settings</span>
-          <span>Login</span>
+          <span onClick={() => location.assign('http://localhost:3000/google')}>
+            Login
+          </span>
         </div>
       </div>
       <div id='newsDisplay'>
