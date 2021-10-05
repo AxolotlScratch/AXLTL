@@ -35,7 +35,7 @@ body {
   font-size: calc(12px + 1vw);
 }
 
-#announcementBar {
+#announcementBar{
   padding-bottom: 10px;
   background-color: #5eb9aa;
 }
@@ -64,9 +64,9 @@ body {
   row-gap: 50px;
 }
 
-#artclBox {
+#artclBox{
   padding: 15px 5px 15px 5px;
-  width: 350px;
+  width: 350px; 
   height: 500px;
   border: 1px solid #e6e6e6;
   overflow-wrap: break-word;
@@ -87,3 +87,4 @@ body {
 #modalImage {
   width: 100%;
 }
+
